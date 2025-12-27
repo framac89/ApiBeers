@@ -1,3 +1,5 @@
+Markdown
+
 # 🍺 Beer Discovery App (.NET)
 
 Un'applicazione console robusta e intelligente per la gestione e la scoperta di birre. Il programma ottimizza le richieste alle API esterne salvando automaticamente i risultati in un database locale per consultazioni future.
@@ -40,3 +42,38 @@ Apri il terminale nella cartella del progetto ed esegui i seguenti comandi:
 **Ripristina i pacchetti NuGet:**
 ```bash
 dotnet restore
+
+Crea la struttura del Database (Entity Framework):
+Bash
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+4. Compilazione ed Esecuzione
+
+Una volta configurato il database, puoi avviare il programma:
+Bash
+
+dotnet build
+dotnet run
+
+📂 Funzionalità tecniche
+
+    Entity Framework Migrations: Gestione fluida dello schema del database.
+
+    API Integration: Gestione delle chiamate HTTP e parsing dei dati JSON.
+
+    Caching su DB: Riduzione della latenza e del consumo di quote API grazie alla persistenza locale.
+
+👨‍💻 Autore
+
+Sviluppato da [Il Tuo Nome]
+
+    Cheers! 🍻 *
+
+
+---
+
+### Un piccolo suggerimento extra:
+Nella sezione **"Preparazione dell'ambiente"**, ho dato per scontato che l'utente abbia già installato lo strumento `dotnet-ef`. Se pensi che chi userà il progetto sia un principiante, potresti aggiungere una riga prima dei comandi del database:
+`dotnet tool install --global dotnet-ef`
