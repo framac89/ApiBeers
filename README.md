@@ -4,6 +4,8 @@ Copy the file appsettings.example.json to appsettings.json and fill in the requi
 
 Import the packages with dotnet restore
 
+run dotnet ef migrations add InitialCreate
+
 Apply the migrations with dotnet ef database update
 
 Build the program with dotnet build
