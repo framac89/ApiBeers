@@ -65,10 +65,7 @@ dotnet run
 
     Caching su DB: Riduzione della latenza e del consumo di quote API grazie alla persistenza locale.
 
-👨‍💻 Autore
-
-Sviluppato da [Il Tuo Nome]
-
+👨‍💻
     Cheers! 🍻 *
 
 
