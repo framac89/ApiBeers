@@ -9,7 +9,7 @@ Un'applicazione console robusta e intelligente per la gestione e la scoperta di 
 ## 🧐 Come funziona
 L'applicazione segue una logica di recupero dati efficiente:
 1. **Input Utente:** L'utente inserisce il nome di una birra.
-2. **Controllo Database:** Il programma verifica se la birra è già presente nel database locale (SQLite/SQL Server).
+2. **Controllo Database:** Il programma verifica se la birra è già presente nel database locale (MySQL).
 3. **Fallback su API:** Se non viene trovata, l'app interroga l'API esterna **Beer9** tramite RapidAPI.
 4. **Persistenza:** Una volta trovata tramite API, la birra viene mostrata all'utente e contestualmente **salvata nel database** per rendere istantanee le ricerche successive.
 
